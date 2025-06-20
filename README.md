@@ -8,7 +8,7 @@ This is a beginner-friendly console game where the player has to guess a random 
 
 ## 📌 Features
 
-- Random number between **1 and 10**
+- Random number between **1 and 100**
 - **5 attempts** to guess the correct number
 - Friendly feedback: 📉 Too low / 📈 Too high
 - Error handling for non-number input
@@ -18,8 +18,8 @@ This is a beginner-friendly console game where the player has to guess a random 
 
 ## 🧠 How the Game Works
 
-1. The computer randomly picks a number between 1 and 10.
-2. The user has **5 chances** to guess it correctly.
+1. The computer randomly picks a number between 1 and 100.
+2. The user has **5 chances**(medium) to guess it correctly.
 3. After each guess:
    - If correct ➤ 🎉 You win!
    - If too low ➤ 📉 "Try again"
@@ -32,10 +32,10 @@ This is a beginner-friendly console game where the player has to guess a random 
 
 ```
 Welcome to the Number Guessing Game!🎯
-I'm thinking of a number between 1 and 10.
+I'm thinking of a number between 1 and 100.
+Choose difficulty (easy, medium, hard): medium
 You have 5 attempts to guess the number.
 Good luck!🍀
-
 Enter your guess: 5
 Your guess is too low. Try again.📉
 
@@ -59,6 +59,13 @@ attempts = 5
 
 print("Welcome to the Number Guessing Game!🎯")
 print("I'm thinking of a number between 1 and 10.")
+level = input("Choose difficulty (easy, medium, hard): ").lower()
+if level == "easy":
+    attempts = 7
+elif level == "medium":
+    attempts = 5
+elif level == "hard":
+    attempts = 3
 print(f"You have {attempts} attempts to guess the number.\nGood luck!🍀")
 
 for attempt in range(attempts):
