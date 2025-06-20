@@ -112,7 +112,6 @@ python guessing_game.py
 
 ## 🌟 Bonus Ideas to Improve
 
-- Add **difficulty levels** (easy, medium, hard)
 - Track and display **number of attempts used**
 - Let user **restart** the game after finishing
 - Add **score** tracking system
