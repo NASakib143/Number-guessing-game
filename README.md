@@ -1,7 +1,7 @@
 
 # 🎯 Number Guessing Game Easy mode (Python)
 
-Welcome to the **Number Guessing Game(easy)** built using Python!  
+Welcome to the **Number Guessing Game** built using Python!  
 This is a beginner-friendly console game where the player has to guess a random number within a limited number of attempts.
 
 ---
@@ -9,7 +9,7 @@ This is a beginner-friendly console game where the player has to guess a random 
 ## 📌 Features
 
 - Random number between **1 and 100**
-- **5 attempts** to guess the correct number
+- **7,5,3 attempts**(based on your level) to guess the correct number
 - Friendly feedback: 📉 Too low / 📈 Too high
 - Error handling for non-number input
 - Fun emojis for better readability 😄
